@@ -16,13 +16,11 @@ function startChangeColor(){
   refs.start.setAttribute("disabled", "disabled");
   changeBodyColor = setInterval(changeColor, 1000);
 }
-
 function stopChangeColor() {
   clearInterval(changeBodyColor);
   refs.stop.setAttribute("disabled", "disabled");
   refs.start.removeAttribute("disabled");
 }
-
 function changeColor() {
   document.body.style.backgroundColor = getRandomHexColor();
 }
